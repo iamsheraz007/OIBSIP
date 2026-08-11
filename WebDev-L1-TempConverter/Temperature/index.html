@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Temperature Converter</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main class="converter-card">
+        <h1>Temperature Converter</h1>
+        
+        <div class="input-group">
+            <label for="tempInput">Temperature Value</label>
+            <input type="text" id="tempInput" placeholder="Enter number..." autocomplete="off">
+            <p id="errorMessage" class="error-text" aria-live="polite"></p>
+        </div>
+
+        <div class="input-group">
+            <label for="unitSelect">Input Unit</label>
+            <select id="unitSelect">
+                <option value="C">Celsius (°C)</option>
+                <option value="F">Fahrenheit (°F)</option>
+                <option value="K">Kelvin (K)</option>
+            </select>
+        </div>
+
+        <button id="convertBtn">Convert</button>
+
+        <section class="results-container" id="resultsContainer">
+            <h2>Converted Values</h2>
+            <div class="result-box">
+                <span class="label">Celsius:</span>
+                <span id="celsiusResult" class="value">--</span>
+            </div>
+            <div class="result-box">
+                <span class="label">Fahrenheit:</span>
+                <span id="fahrenheitResult" class="value">--</span>
+            </div>
+            <div class="result-box">
+                <span class="label">Kelvin:</span>
+                <span id="kelvinResult" class="value">--</span>
+            </div>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
